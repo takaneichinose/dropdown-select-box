@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basic usage for mhai combo box</title>
+    <link rel="stylesheet" href="../css/mhai-dropdown.css">
+  </head>
+  <body>
+    <div class="mhai-combobox" id="example"></div>
+    <script src="../js/mhai-dropdown.js"></script>
+    <script>
+      var combo = new MhaiCombobox('#example');
+
+      combo.init({
+        data : [
+          { value : 'Value1'  , text : 'Dog'     },
+          { value : 'Value2'  , text : 'Cat'     },
+          { value : 'Value3'  , text : 'Mouse'   },
+          { value : 'Value4'  , text : 'Rabbit'  },
+          { value : 'Value5'  , text : 'Cow'     },
+          { value : 'Value6'  , text : 'Sheep'   },
+          { value : 'Value7'  , text : 'Horse'   },
+          { value : 'Value8'  , text : 'Goat'    },
+          { value : 'Value9'  , text : 'Snake'   },
+          { value : 'Value10' , text : 'Frog'    },
+          { value : 'Value11' , text : 'Salmon'  },
+          { value : 'Value12' , text : 'Tuna'    },
+          { value : 'Value13' , text : 'Whale'   },
+          { value : 'Value14' , text : 'Chicken' },
+          { value : 'Value15' , text : 'Duck'    },
+        ],
+        valueName      : 'combo_value',
+        textName       : 'combo_text',
+        optionCount    : 5,
+        transitionTime : 300,
+        inputTime      : 500,
+        caseSensitive  : false,
+        closeOnSelect  : true,
+        placeholder    : 'Type anything here...',
+        errorCallback  : function(message) {
+          alert(message);
+        },
+        optionsBorder  : 1
+      });
+    </script>
+  </body>
+</html>
+

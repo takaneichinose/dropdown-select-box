@@ -1,0 +1,105 @@
+.mhai-combobox {
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: #ffffff;
+  width: 300px;
+  height: 50px;
+  padding: 0 40px 0 10px;
+  border: solid 1px #9f9f9f;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+.mhai-combobox a.mhai-caret {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #dcdcdc;
+  width: 30px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  cursor: default;
+}
+.mhai-combobox a.mhai-caret::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.mhai-combobox a.mhai-caret:after {
+  content: "▼";
+}
+.mhai-combobox input.mhai-text {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: none;
+  display: block;
+  outline: none;
+}
+.mhai-combobox div.mhai-options {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #ffffff;
+  width: calc(100% + 2px);
+  box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: -1px;
+  outline: none;
+  transition: height 300ms ease-out;
+}
+.mhai-combobox div.mhai-options::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.mhai-combobox div.mhai-options.mhai-options-top {
+  border: solid 1px #9f9f9f;
+  overflow: auto;
+  border-bottom: none;
+}
+.mhai-combobox div.mhai-options.mhai-options-bottom {
+  border: solid 1px #9f9f9f;
+  overflow: auto;
+  border-top: none;
+}
+.mhai-combobox div.mhai-options a.mhai-option {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  overflow: hidden;
+  outline: none;
+  cursor: default;
+  transition: color 0.15s, background-color 0.15s;
+}
+.mhai-combobox div.mhai-options a.mhai-option::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.mhai-combobox div.mhai-options a.mhai-option:hover {
+  background-color: #f5f5f5;
+}
+.mhai-combobox div.mhai-options a.mhai-option:active, .mhai-combobox div.mhai-options a.mhai-option:focus, .mhai-combobox div.mhai-options a.mhai-option.mhai-active {
+  color: #ffffff;
+  background-color: #1e90ff;
+}
+
